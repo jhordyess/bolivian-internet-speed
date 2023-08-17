@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://res.cloudinary.com/jhordyess/image/upload/v1667836186/global/favicon.svg.svg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Velocidad de Internet en Bolivia</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script type="module" crossorigin src="/bolivian-internet-speed-lp/assets/index-dfd814f7.js"></script>
+    <link rel="stylesheet" href="/bolivian-internet-speed-lp/assets/index-5f30c343.css">
+  </head>
+  <body class="w-full">
+    <header class="bg-gray-800 py-4 text-center text-white">
+      <h1 class="text-2xl font-bold">Velocidad de Internet en Bolivia</h1>
+      <p>Representación en un interactivo Choropleth Map.</p>
+    </header>
+
+    <main class="container mx-auto w-full px-6">
+      <section class="my-4">
+        👉 <b>Nótese que:</b>
+        <ul class="list-inside list-disc px-2">
+          <li>
+            Se toma en cuenta la <b>velocidad de descarga</b> en dispositivos con conexión fija en
+            <b>Megabits por segundo (Mbps)</b>.
+          </li>
+          <li>
+            La información corresponde al año <b>2021</b>. Para más información, visita el
+            repositorio
+            <a
+              href="https://github.com/lab-tecnosocial/velocidad_internet_BO/"
+              target="_blank"
+              rel="noreferrer"
+              class="text-blue-600 hover:text-blue-400"
+            >
+              velocidad_internet_BO</a
+            >
+            de
+            <a href="https://github.com/lab-tecnosocial" class="text-blue-600 hover:text-blue-400"
+              >@lab-tecnosocial</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section class="flex min-w-fit items-center gap-3 rounded-t border bg-white p-2">
+        <label for="cities-selector" class="text-sm">Selecciona la ciudad (Opcional)</label>
+        <select
+          class="w-52 rounded-md border-2 border-gray-300 py-2 pl-2 focus:border-indigo-500 focus:outline-none focus:ring-2 focus:ring-indigo-200"
+          id="cities-selector"
+        ></select>
+      </section>
+
+      <div id="leafletMap" class="h-96"></div>
+    </main>
+
+    <footer class="mx-auto my-4 text-center">
+      Echo con 💪 por&nbsp;
+      <a
+        class="text-blue-600 hover:text-blue-400"
+        href="https://www.jhordyess.com"
+        target="_blank"
+        rel="noreferrer"
+      >
+        Jhordyess
+      </a>
+      <br />
+      <a href="" target="_blank" rel="noreferrer" class="text-blue-600 hover:text-blue-400">
+        👉 Ver en GitHub
+      </a>
+    </footer>
+    
+  </body>
+</html>

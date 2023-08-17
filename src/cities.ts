@@ -1,10 +1,10 @@
 const generateId = () => Math.random().toString(36).substr(2, 9)
 
 const cities: Record<string, { id: string; city: string; coordinates: [number, number] }[]> = {
-  'Santa Cruz': [
+  'Santa Cruz SC': [
     {
       id: generateId(),
-      city: 'Santa Cruz de la Sierra  🏙️',
+      city: 'Santa Cruz de la Sierra 🏛',
       coordinates: [-17.78629, -63.18117]
     },
     {
@@ -28,7 +28,7 @@ const cities: Record<string, { id: string; city: string; coordinates: [number, n
       coordinates: [-17.753889, -62.996944]
     }
   ],
-  'La Paz': [
+  'La Paz LP': [
     {
       id: generateId(),
       city: 'El Alto',
@@ -36,7 +36,7 @@ const cities: Record<string, { id: string; city: string; coordinates: [number, n
     },
     {
       id: generateId(),
-      city: 'Nuestra Señora de La Paz  🏙️',
+      city: 'Nuestra Señora de La Paz 🏛',
       coordinates: [-16.5, -68.15]
     },
     {
@@ -45,10 +45,10 @@ const cities: Record<string, { id: string; city: string; coordinates: [number, n
       coordinates: [-16.633333, -68.283333]
     }
   ],
-  Cochabamba: [
+  'Cochabamba CB': [
     {
       id: generateId(),
-      city: 'Cochabamba  🏙️',
+      city: 'Cochabamba 🏛',
       coordinates: [-17.3895, -66.1568]
     },
     {
@@ -67,24 +67,24 @@ const cities: Record<string, { id: string; city: string; coordinates: [number, n
       coordinates: [-16.9725, -65.42]
     }
   ],
-  Chuquisaca: [
+  'Chuquisaca CH': [
     {
       id: generateId(),
-      city: 'Sucre  🏙️',
+      city: 'Sucre 🏛',
       coordinates: [-19.03332, -65.26274]
     }
   ],
-  Oruro: [
+  'Oruro OR': [
     {
       id: generateId(),
-      city: 'Oruro  🏙️',
+      city: 'Oruro 🏛',
       coordinates: [-17.98333, -67.15]
     }
   ],
-  Tarija: [
+  'Tarija TJ': [
     {
       id: generateId(),
-      city: 'Tarija  🏙️',
+      city: 'Tarija 🏛',
       coordinates: [-21.53549, -64.72956]
     },
     {
@@ -93,17 +93,17 @@ const cities: Record<string, { id: string; city: string; coordinates: [number, n
       coordinates: [-22.01643, -63.67753]
     }
   ],
-  Potosí: [
+  'Potosí PT': [
     {
       id: generateId(),
-      city: 'Potosí  🏙️',
+      city: 'Potosí 🏛',
       coordinates: [-19.58361, -65.75306]
     }
   ],
-  Beni: [
+  'Beni BN': [
     {
       id: generateId(),
-      city: 'Trinidad  🏙️',
+      city: 'Trinidad 🏛',
       coordinates: [-14.83333, -64.9]
     },
     {
@@ -112,10 +112,10 @@ const cities: Record<string, { id: string; city: string; coordinates: [number, n
       coordinates: [-11.005, -66.066111]
     }
   ],
-  Pando: [
+  'Pando PA': [
     {
       id: generateId(),
-      city: 'Cobija  🏙️',
+      city: 'Cobija 🏛',
       coordinates: [-11.02671, -68.76918]
     }
   ]

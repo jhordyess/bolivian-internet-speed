@@ -19,7 +19,7 @@ La información requerida para representar el Choropleth fue consultada gracias 
 
 ### Online
 
-Visita la página funcionando: <https://jhordyess.github.io/bolivian-internet-velocity>
+Visita la página funcionando: <https://jhordyess.github.io/bolivian-internet-speed>
 
 ### TO-DO
 

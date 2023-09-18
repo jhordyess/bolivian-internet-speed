@@ -1,14 +1,8 @@
-import type { Map, TileLayerOptions, TileLayer, Marker, geoJSON, GeoJSONOptions } from 'leaflet'
+import type { Map, TileLayerOptions, GeoJSONOptions } from 'leaflet'
 import './style.css'
+import 'leaflet/dist/leaflet.css'
+import { map, tileLayer, geoJSON } from 'leaflet'
 import citiesList from './cities'
-
-// Declare Leaflet object with map, tileLayer, marker, and geoJSON methods
-declare const L: {
-  map: (id: string) => Map
-  tileLayer: (url: string, options: TileLayerOptions) => TileLayer
-  marker: (latlng: [number, number]) => Marker
-  geoJSON: typeof geoJSON
-}
 
 // Get a random city from the list of cities
 const getRandomCity = (): { id: string; city: string; coordinates: [number, number] } => {
@@ -20,7 +14,7 @@ const getRandomCity = (): { id: string; city: string; coordinates: [number, numb
 // Set up the Leaflet map with a random city as the initial view
 const randomCity = getRandomCity()
 const mapElementId = 'leafletMap'
-const leafletMap: Map = L.map(mapElementId).setView(randomCity.coordinates, 13)
+const leafletMap: Map = map(mapElementId).setView(randomCity.coordinates, 13)
 
 // Create a search bar for selecting cities
 const createSearchBar = () => {
@@ -69,12 +63,12 @@ const tileLayerOptions: TileLayerOptions = {
 }
 
 // Add tile layer to the map
-L.tileLayer(tileLayerUrl, tileLayerOptions).addTo(leafletMap)
+tileLayer(tileLayerUrl, tileLayerOptions).addTo(leafletMap)
 
 // Fetch geoJSON data from a URL and add it to the map
 const drawGeoJSON = async <T>(url: string, options: GeoJSONOptions<T> = {}) => {
   const data = await jsonFetch(url)
-  L.geoJSON(data, options).addTo(leafletMap)
+  geoJSON(data, options).addTo(leafletMap)
 }
 
 // Fetch JSON data from a URL
